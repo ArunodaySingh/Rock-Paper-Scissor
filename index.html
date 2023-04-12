@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./rock.js"></script>
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="grid">
+      <div class="gamebox">
+        <h3 class="__gamename">
+          Rock <br />
+          Paper <br />
+          Scissors
+        </h3>
+        <div class="__gamescore">
+          <p>Score</p>
+          <span id="__gamescorevalue">0</span>
+        </div>
+      </div>
+
+      <div id="game" class="game">
+        <img class="img" src="./images/bg-triangle.svg" alt="" />
+        <img
+          onclick="myFuction(0)"
+          class="icon1"
+          src="./images/icon-paper.svg"
+          alt=""
+        />
+        <img
+          onclick="myFuction(1)"
+          class="icon2"
+          src="./images/icon-rock.svg"
+          alt=""
+          value="1"
+        />
+        <img
+          onclick="myFuction(2)"
+          class="icon3"
+          src="./images/icon-scissors.svg"
+          alt=""
+          value="2"
+        />
+      </div>
+      <div id="youvscom">
+        <div id="you">
+          <p id="youpicked">You Picked</p>
+          <img id="showpic1" src="./images/icon-paper.svg" alt="" />
+        </div>
+        <div id="showresult">
+          <p id="iswin"></p>
+          <span onclick="reverseMyfunction()">Play Again</span>
+        </div>
+        <div id="com">
+          <p id="compicked">Computer Picked</p>
+          <img id="showpic2" src="./images/icon-rock.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
